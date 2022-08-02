@@ -1,0 +1,154 @@
+@import url(./Inter/inter.css);
+
+
+
+
+.page {
+    max-width: 1280px;
+    min-width: 320px;
+    font-family: 'Inter', 'Arial', 'sans-serif';
+    margin: 0 auto;
+    padding: 0;
+    background-color: #000000;
+    box-sizing: border-box;
+}
+
+
+
+.header {
+    /* border: 1px solid red; */
+    width: calc(100% - 400px);
+    margin: 45px auto 40px;
+    padding: 0;
+    /* border-bottom: 1px solid #A5A5A5; */
+}
+
+.header__logo {
+    /* border: 2px solid teal; */
+    margin: 0;
+    width: 142px;
+}
+
+.header_line {
+    margin-top: 41px;
+}
+
+
+
+.profile {
+    display: flex;
+    max-width: calc(100% - 400px);
+    margin: 0 auto;
+    max-height: 120px;
+}
+
+.profile__avatar {
+    max-width: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.profile__info {
+    max-width: 336px;
+    padding: 0 0 0 30px;
+    display: grid;
+}
+
+.profile__username {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.625em;
+    line-height: 1.14;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.profile__status {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 22px;
+    margin: 0;
+    /* grid-area: ; */
+    color: #FFFFFF;
+}
+
+.profile__edit-button {
+    width: 24px;
+    margin: 15px 0 0;
+    padding: 0 0 0 18px;
+    grid-area: 1/2/2/2;
+}
+
+.profile__edit-button:hover {
+    opacity: .6;
+}
+
+.profile__add-button {
+    width: 150px;
+    margin-left: auto;
+}
+
+.profile__add-button:hover {
+    opacity: .6;
+}
+
+
+.elements {
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    align-content: center;
+    gap: 20px;
+    max-width: 880px;
+}
+
+.element {
+    border-radius: 2%;
+    max-width: 282px;
+    max-height: 362px;
+    background: #FFFFFF;
+}
+
+
+.element__image {
+    max-width: 282px;
+    /* width: 100%; */
+    object-fit: cover;
+}
+
+.element__title {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 21px 31px 15px;
+}
+
+.element__text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.5em;
+    line-height: 29px;
+    color: #000000;
+}
+
+.element__like:hover {
+    opacity: .6;
+}
+
+.footer {
+    margin: 67px 200px 60px;
+}
+
+.footer__copyright {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 22px;
+    color: #545454;
+}
