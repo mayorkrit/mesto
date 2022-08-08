@@ -177,11 +177,11 @@
     background-color: white;
 }
 
-.popup_opened {
+/* .popup_opened {
     display: flex;
     visibility: visible;
     opacity: 1;
-}
+} */
 
 
 .popup__input-field {
