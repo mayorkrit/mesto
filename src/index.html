@@ -19,7 +19,7 @@
     <section class="profile">
         <img src="./images/wjiUlt_QhzA7DDg2MifZJxpNyI9J4i4M4tTZjxlSYUJAwDuTfdnAflQcUyLA3uksSQ-MuFnOYrhie_TCMpDHak7G.jpeg" class="profile__avatar" alt="Аватар">
         <div class="profile__info">
-            <h1 class="profile__username">Мелконян Арсений</h1>
+            <h1 class="profile__username">Арсений</h1>
             <img src="./images/Edit-Button.svg" class="profile__edit-button" alt="кнопка редактировать">
             <h2 class="profile__status">Чурка-Армян</h2>
         </div>
@@ -38,7 +38,7 @@
       </div>
 
       <div class="element">
-          <img src="./images/kirill-pershin-1088404-unsplash (1).jpg"  class="element__image" alt="">
+          <img src="./images/seynya.jpeg"  class="element__image" alt="">
           <div class="element__title">
             <p class="element__text">ПЕНИС</p>
             <img src="./images/Vector.svg" class="element__like" alt="">
@@ -46,9 +46,9 @@
       </div>
 
       <div class="element">
-          <img src="./images/kirill-pershin-1088404-unsplash (1).jpg"  class="element__image" alt="">
+          <img src="./images/vv.jpeg"  class="element__image" alt="">
           <div class="element__title">
-            <p class="element__text">ПЕНИС</p>
+            <p class="element__text">RIP</p>
             <img src="./images/Vector.svg" class="element__like" alt="">
           </div>
       </div>
@@ -82,5 +82,18 @@
     <footer class="footer">
       <h5 class="footer__copyright">© 2022 Логинов Игорь</h5>
     </footer>
+
+    <section id="popup" class="popup popup__profile popup_opened">
+      <div class="popup__body">
+        <button type="button" class="popup__close" aria-label="Закрыть форму"></button>
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <form name="editValues" method="post" class="popup__form popup__form-profile" novalidate></form>
+        <input type="text" class="popup__input-field popup__input-field_value_name" id="profile-username" name="name" placeholder="Имя" required minlength="2" maxlength="40">
+        <span id="profile-username-error" class="popup__input-field popup__input-field_error"></span>
+        <input type="text" class="popup__input-field popup__input-field_value_job" id="profile-job" name="about" placeholder="О себе" required minlength="2" maxlength="200">
+        <span id="profile-job-error" class="popup__input-field popup__input-field_error"></span>
+        <input name="submit" type="submit" value="Сохранить" class="popup__submit-button">
+      </div>
+    </section>
 </body>
 </html>
