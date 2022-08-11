@@ -1,5 +1,42 @@
-@import url(./Inter/inter.css);
+@import url(./vendor/Inter/inter.css);
+@import url(./vendor/normalize.css);
 
+ /* header  */
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__logo/header__logo.css);
+
+/* profile */
+@import url(./blocks/profile/profile.css);
+@import url(./blocks/profile/__add-button/profile__add-button.css);
+@import url(./blocks/profile/__avatar/profile__avatar.css);
+@import url(./blocks/profile/__edit-button/profile__edit-button.css);
+@import url(./blocks/profile/__info/profile__info.css);
+@import url(./blocks/profile/__status/profile__status.css);
+@import url(./blocks/profile/__username/profile__username.css);
+
+
+@import url(./blocks/elements/elements.css);
+@import url(./blocks/element/element.css);
+@import url(./blocks/element/__image/element__image.css);
+@import url(./blocks/element/__like/element__like.css);
+@import url(./blocks/element/__text/element__text.css);
+@import url(./blocks/element/__title/element__title.css);
+
+/* footer */
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__copyright/footer__copyright.css);
+
+/* popup */
+
+@import url(./blocks/popup/popup.css);
+@import url(./blocks/popup/popup__closed.css);
+@import url(./blocks/popup/popup_opened.css);
+@import url(./blocks/popup/__body/popup__container.css);
+@import url(./blocks/popup/__close/popup__close.css);
+@import url(./blocks/popup/__input-field/popup__input-field.css);
+@import url(./blocks/popup/__profile/popup__profile.css);
+@import url(./blocks/popup/__submit-button/popup__submit-button.css);
+@import url(./blocks/popup/__title/popup__title.css);
 
 
 
@@ -11,267 +48,4 @@
     padding: 0;
     background-color: #000000;
     box-sizing: border-box;
-}
-
-
-
-.header {
-    /* border: 1px solid red; */
-    width: calc(100% - 400px);
-    margin: 45px auto 40px;
-    padding: 0;
-    /* border-bottom: 1px solid #A5A5A5; */
-}
-
-.header__logo {
-    /* border: 2px solid teal; */
-    margin: 0;
-    width: 142px;
-}
-
-.header_line {
-    margin-top: 41px;
-}
-
-
-
-.profile {
-    display: flex;
-    max-width: calc(100% - 400px);
-    margin: 0 auto;
-    max-height: 120px;
-}
-
-.profile__avatar {
-    max-width: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 0;
-}
-
-.profile__info {
-    max-width: 336px;
-    padding: 0 0 0 30px;
-    display: grid;
-}
-
-.profile__username {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2.625em;
-    line-height: 1.14;
-    color: #FFFFFF;
-    margin: 0;
-}
-
-.profile__status {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.125em;
-    line-height: 22px;
-    margin: 0;
-    /* grid-area: ; */
-    color: #FFFFFF;
-}
-
-.profile__edit-button {
-    width: 24px;
-    margin: 15px 0 0;
-    padding: 0 0 0 18px;
-    grid-area: 1/2/2/2;
-}
-
-.profile__edit-button:hover {
-    opacity: .6;
-}
-
-.profile__add-button {
-    width: 150px;
-    margin-left: auto;
-}
-
-.profile__add-button:hover {
-    opacity: .6;
-}
-
-
-.elements {
-    margin: 50px auto 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    align-content: center;
-    gap: 20px;
-    max-width: 880px;
-}
-
-.element {
-    border-radius: 2%;
-    max-width: 282px;
-    max-height: 362px;
-    background: #FFFFFF;
-}
-
-
-.element__image {
-    max-width: 282px;
-    max-height: 282px;
-    /* width: 100%; */
-    object-fit: cover;
-}
-
-.element__title {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 21px 31px 15px;
-}
-
-.element__text {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    margin: 0;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 1.5em;
-    line-height: 29px;
-    color: #000000;
-}
-
-.element__like:hover {
-    opacity: .6;
-}
-
-.footer {
-    margin: 67px 200px 60px;
-}
-
-.footer__copyright {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.125em;
-    line-height: 22px;
-    color: #545454;
-}
-
-
-
-.popup {
-    display: flex;
-    position: fixed;
-    /* top: 0;
-    left: 0; */
-    left: 425px;
-    top: 195px;
-    z-index: 5;
-    background: rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    width: 440px;
-    height: 330px;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-
-.popup__profile {
-    background-color: white;
-}
-
-/* .popup_opened {
-    display: flex;
-    visibility: visible;
-    opacity: 1;
-} */
-
-
-.popup__input-field {
-    font-family: inherit;
-    width: 358px;
-    min-height: 27.26px;
-    margin: 0 36px 30px;
-    padding: 0;
-    border: none;
-    border-bottom: 1px solid #CCCCCC;
-    background-color: transparent;
-}
-
-.popup__title {
-    padding: 0;
-    margin: 34px 64px 54px 36px;
-    text-align: left;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 29px;
-}
-
-@media screen and (max-width: 575px) {
-    .popup__title {
-        width: calc(100% - 30px*2);
-        margin: 25px auto;
-        font-size: 16px;
-        line-height: 1.2;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .popup__input-field {
-        width: calc(100% - 30px*2);
-        margin: 0 30px 10px;
-    }
-}
-
-.popup__close {
-    position: absolute;
-    width: 40.7px;
-    height: 40.7px;
-    top: -40px;
-    right: -38px;
-    padding: 0;
-    background-image: url(./images/Close-Icon.svg);
-    background-size: inherit;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    transition: opacity .4s;
-    border: none;
-    background-color: transparent;
-}
-
-.popup__close:hover {
-    opacity: 0.6;
-}
-
-.popup__submit-button {
-    position: absolute;
-    z-index: 10;
-    left: 36px;
-    bottom: 36px;
-    width: 358px;
-    height: 50.15px;
-    padding: 0;
-    background-color: black;
-    border: 0;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: opacity .4s;
-
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.125em; 
-    line-height: 22px;
-    color: #FFFFFF;
-}
-
-.popup__submit-button:hover {
-    opacity: .8;
-}
-
-@media screen and (max-width: 575px) {
-    .popup__submit-button {
-        width: calc(100% - 30px*2);
-        height: 30px;
-        bottom: 15px;
-        left: 30px;
-    }
 }

@@ -1,0 +1,13 @@
+.element {
+    border-radius: 2%;
+    max-width: 282px;
+    max-height: 362px;
+    overflow: hidden;
+    background: #FFFFFF;
+}
+
+@media screen and (max-width: 600px) {
+    .element {
+        margin: 0 auto;
+    }
+}
