@@ -1,4 +1,9 @@
-@import url(./Inter/inter.css);
+@import url(./vendor/Inter/inter.css);
+@import url(./vendor/normalize.css);
+
+ /* header  */
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__logo/header__logo.css);
 
 
 
@@ -11,26 +16,6 @@
     padding: 0;
     background-color: #000000;
     box-sizing: border-box;
-}
-
-
-
-.header {
-    /* border: 1px solid red; */
-    width: calc(100% - 400px);
-    margin: 45px auto 40px;
-    padding: 0;
-    /* border-bottom: 1px solid #A5A5A5; */
-}
-
-.header__logo {
-    /* border: 2px solid teal; */
-    margin: 0;
-    width: 142px;
-}
-
-.header_line {
-    margin-top: 41px;
 }
 
 
@@ -177,12 +162,17 @@
     background-color: white;
 }
 
-/* .popup_opened {
+.popup_opened {
     display: flex;
     visibility: visible;
     opacity: 1;
-} */
+}
 
+.popup_closed {
+    display: flex;
+    visibility: hidden;
+    opacity: 1;
+}
 
 .popup__input-field {
     font-family: inherit;
