@@ -42,8 +42,9 @@ function popupClose(popupActive, doUnlock = true) {
 
 // заполнение из содержаниия страницы
 
-// let name = document.querySelector('.profile__username')
-// let status = document.querySelector('.profile__status')
+let govno = popup.querySelector('.popup__form');
+
+
 
 // console.log(name, status)
 
@@ -64,33 +65,16 @@ function popupClose(popupActive, doUnlock = true) {
 
 
 let formSearch = document.querySelector('.popup__form') // Находим форму в DOM
-console.log(formSearch)
 let nameInput = formSearch.querySelector('.popup__input-field_value_name') // Находим поля формы в DOM
-console.log(nameInput)
 let jobInput = formSearch.querySelector('.popup__input-field_value_job')
-console.log(jobInput)
 
-
-
-
-
-// Обработчик «отправки» формы, хотя пока
-// она никуда отправляться не будет
 function formSubmitHandler (evt) {
-    evt.preventDefault(); // Эта строчка отменяет стандартную отправку формы.
-                                                // Так мы можем определить свою логику отправки.
-                                                // О том, как это делать, расскажем позже.
+    evt.preventDefault();
     nameInput.textContent = nameInput.value
-    console.log(nameInput)  
-    // jobInput.value = 
-    
-                                           // Получите значение полей jobInput и nameInput из свойства value
-
-    // Выберите элементы, куда должны быть вставлены значения полей
-
-    // Вставьте новые значения с помощью textContent
+    let name = document.querySelector('.profile__username')
+    let status = document.querySelector('.profile__status')
+    name.textContent = nameInput.value
+    status.textContent = jobInput.value
 }
 
-// Прикрепляем обработчик к форме:
-// он будет следить за событием “submit” - «отправка»
 formElement.addEventListener('submit', formSubmitHandler); 
