@@ -40,29 +40,6 @@ function popupClose(popupActive, doUnlock = true) {
     }
 }
 
-// заполнение из содержаниия страницы
-
-let govno = popup.querySelector('.popup__form');
-
-
-
-// console.log(name, status)
-
-// let formSearch = document.querySelector('.popup__form') // Находим форму в DOM
-// console.log(formSearch)
-
-
-
-// nameInput.innerHTML = name.innerHTML
-// console.log(nameInput)
-
-
-
-
-
-
-
-
 
 let formSearch = document.querySelector('.popup__form') // Находим форму в DOM
 let nameInput = formSearch.querySelector('.popup__input-field_value_name') // Находим поля формы в DOM
