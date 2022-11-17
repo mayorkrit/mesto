@@ -1,7 +1,7 @@
 # Проект: Место
 
 
-https://mayorkrit.github.io/mesto/src/index.html
+https://github.com/mayorkrit/mesto/src/index.html
 
 ***Technologies:***
 - Adaptive layout using flexbox and grid positioning;
